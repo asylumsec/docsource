@@ -40,6 +40,7 @@
     <link href="/_images/asi.ico" rel="shortcut icon" type="text/css">
     <!--[if IE]><link rel="shortcut icon" href="<%= File.join(images_path, 'shadowman.ico') %>"><![endif]-->
   </head>
+ <body class="has-sidebar">
   <nav class="navbar navbar-pf-vertical">
   <div class="navbar-header">
      <button type="button" class="navbar-toggle">
@@ -83,6 +84,7 @@
     </ul>
   </nav>
   </nav> <!--/.navbar-->
+  <nav class="navbar navbar-sidebar ">
   <div class="nav-pf-vertical">
   <ul class="list-group">
     <li class="list-group-item">
@@ -99,7 +101,7 @@
     </li>
   </ul>
   </div>
-
+</nav>
   <script>
   $(document).ready(function() {
     // matchHeight the contents of each .card-pf and then the .card-pf itself
@@ -112,7 +114,6 @@
     $().setupVerticalNavigation(true);
   });
   </script>
-
 
     <div class="container">
        <div id="main" class="col-md-6 clearfix" role="main">
