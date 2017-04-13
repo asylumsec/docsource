@@ -4,6 +4,6 @@ git 'https://github.com/asylumsec/docsource.git'
 dir('docsource') {
     // some block
 }
-
+deleteDir()
 
 
