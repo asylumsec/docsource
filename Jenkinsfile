@@ -1,8 +1,4 @@
 echo 'I am winning'
-
-dir('docsource') {
-    // some block
-}
-deleteDir()
+echo 'I do not know how to use Jenkins'
 
 
