@@ -40,35 +40,103 @@
     <link href="<%= File.join(images_path, 'asi.ico') %>" rel="shortcut icon" type="text/css">
     <!--[if IE]><link rel="shortcut icon" href="<%= File.join(images_path, 'shadowman.ico') %>"><![endif]-->
   </head>
-  <nav class="navbar navbar-default navbar-pf" role="navigation">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">
-        <img src="<%= File.join(images_path, 'logo.svg') %>" alt="Asylum Security" class="img-responsive"/>
-      </a>
-    </div>
-    <div class="collapse navbar-collapse navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-primary">
-        <li>
-          <a href="/index.html">Home</a>
-        </li>
-        <li class="active">
-          <a href="/latest/welcome">Latest Docs</a>
-        </li>
-        <li>
-          <a href="https://github.com/asylumsec" target="_blank">Asylum Security Github</a>
-        </li>
-          <li>
-            <a href="https://www.youtube.com/watch?v=svSGKJFSl-8" target="_blank">Help</a>
-          </li>
-      </ul>
-    </div>
+  <nav class="navbar navbar-pf-vertical">
+  <div class="navbar-header">
+     <button type="button" class="navbar-toggle">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="/" class="navbar-brand">
+      <img class="navbar-brand-icon" src="/assets/dist/img/logo-alt.svg" alt=""/><img class="navbar-brand-name" src="/assets/dist/img/fn-brand.svg" alt="PatternFly Enterprise Application" />
+    </a>
+  </div>
+  <nav class="collapse navbar-collapse">
+    <ul class="nav navbar-nav">
+    </ul>
+    <ul class="nav navbar-nav navbar-right navbar-iconic">
+      <li class="dropdown">
+        <a class="dropdown-toggle nav-item-iconic" id="notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <span title="Notifications" class="fa pficon-flag"></span>
+          <span class="badge">0</span>
+        </a>
+        <div class="dropdown-menu infotip bottom-right">
+          <div class="arrow"></div>
+          <ul class="list-group">
+            <li class="list-group-item">
+              <span class="i pficon pficon-info"></span> No Messages
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle nav-item-iconic" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          <span title="Help" class="fa pficon-help"></span>
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+          <li><a href="https://github.com/donnydavis/donnydavis.github.io">Fork Me</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </li>
+    </ul>
   </nav>
+</nav> <!--/.navbar-->
+<div class="nav-pf-vertical">
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a href="/#">
+        <span class="fa fa-dashboard" data-toggle="tooltip" title="Home"></span>
+        <span class="list-group-item-value">Home</span>
+      </a>
+    </li>
+    <li class="list-group-item">
+      <a href="/articles">
+        <span class="fa fa-paper-plane" data-toggle="tooltip" title="Articles"></span>
+        <span class="list-group-item-value">Articles</span>
+      </a>
+    </li>
+    <li class="list-group-item">
+      <a href="/services">
+        <span class="fa fa-rocket" data-toggle="tooltip" title="Services"></span>
+        <span class="list-group-item-value">Services</span>
+      </a>
+    </li>
+    <li class="list-group-item">
+      <a href="/about">
+        <span class="fa fa-graduation-cap" data-toggle="tooltip" title="About"></span>
+        <span class="list-group-item-value">About</span>
+      </a>
+    </li>
+    <li class="list-group-item">
+      <a href="/links">
+        <span class="fa fa-link" data-toggle="tooltip" title="Links"></span>
+        <span class="list-group-item-value">Links</span>
+      </a>
+    </li>
+    <li class="list-group-item">
+      <a href="/docs/latest/welcome/">
+        <span class="fa fa-book" data-toggle="tooltip" title="Links"></span>
+        <span class="list-group-item-value">Docs</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<script>
+  $(document).ready(function() {
+    // matchHeight the contents of each .card-pf and then the .card-pf itself
+    $(".row-cards-pf > [class*='col'] > .card-pf .card-pf-title").matchHeight();
+    $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-body").matchHeight();
+    $(".row-cards-pf > [class*='col'] > .card-pf > .card-pf-footer").matchHeight();
+    $(".row-cards-pf > [class*='col'] > .card-pf").matchHeight();
+
+    // Initialize the vertical navigation
+    $().setupVerticalNavigation(true);
+  });
+</script>
+
 
   <body>
     <div class="container-fluid">

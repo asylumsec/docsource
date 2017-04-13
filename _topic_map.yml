@@ -30,11 +30,3 @@ Topics:
     File: tools
   - Name: Frequently Asked Questions
     File: faq
-#---
-#Name: Red Hat Satellite
-#Dir: satellite
-#Topics:
-#  - Name: Overview
-#    File: index
-#  - Name: Quick Start
-#    File: quickstart
