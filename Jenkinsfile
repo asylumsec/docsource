@@ -1,8 +1,9 @@
-#!/bin/sh
-
 echo 'I am winning'
-ls -al 
+git 'https://github.com/asylumsec/docsource.git'
 
-cd docsource
+dir('docsource') {
+    // some block
+}
+
 
 
