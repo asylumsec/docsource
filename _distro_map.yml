@@ -1,10 +1,10 @@
 ---
 redhatgov:
-  name: Red Hat Gov
-  author: Red Hat Gov <donny@redhat.com>
+  name: Asylum Security
+  author: Donny Davis <donny@fortnebula.com>
   site: main
   site_name: Home
-  site_url: https://redhatgov.github.io
+  site_url: https://asylumsec.github.io
   branches:
     master:
       name: Latest
