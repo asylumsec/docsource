@@ -1,0 +1,2 @@
+#!/bin/bash
+/usr/bin/http-server /docs/redhatgov.github.io/ &

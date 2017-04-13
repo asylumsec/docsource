@@ -1,0 +1,22 @@
+[[getting-started]]
+= How to get started writing docs for this project
+{product-author}
+{product-version}
+:data-uri:
+:icons:
+:experimental:
+:toc: macro
+:toc-title:
+:prewrap!:
+
+toc::[]
+
+== Overview
+This repo includes a couple tools to help easy the process of getting your enviroment setup and running. The tools are a work in progress.
+
+There will be improvements to come in the tooling to make working with this repo easier. If you are interested in contributing to the tools used to build and deploy the documentation, we do accept pull requests! :)
+
+[WARNING]
+====
+This documentation is aimed at demo enviroments used by Red Hat engineers
+====

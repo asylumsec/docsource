@@ -1,0 +1,40 @@
+[[tools]]
+= Useful tools for working with Asciidoc
+{product-author}
+{product-version}
+:data-uri:
+:icons:
+:experimental:
+:toc: macro
+:toc-title:
+:prewrap!:
+
+toc::[]
+
+== Asciidoc editors
+Github Atom is a great editor with support for editing asciidocs.
+The powerful package system in Github atom allows you to extend it to suit your needs.
+Open Edit>Preferencs
+
+Click on Install and search for asciidoc.
+
+I find *asciidoctor-preview*, *autocomplete-asciidoc*, and *language-asciidoc* to be helpful in doc generation. 
+
+If you are comfortable with emacs, its also a very powerful editor.
+
+== Asciidoc Skeleton
+When working with asciidoc, its good to have a skeleton file to start with. It makes getting to writing documents much easier.
+
+This is the skeleton for this sites documentation. You will find it on each document
+----
+[[edit-me]]
+= Useful tools for working with Asciidoc
+{product-author}
+{product-version}
+:data-uri:
+:icons:
+:experimental:
+:toc: macro
+:toc-title:
+:prewrap!:
+----

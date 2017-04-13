@@ -1,0 +1,16 @@
+#!/bin/bash
+unset WORKINGDIR
+export WORKINGDIR=/docs
+cd $WORKINGDIR/docs-source
+git add -A
+git commit -m "auto deploy by $USER"
+asciibinder package
+rsync -avz --exclude=.git --exclude=CNAME --exclude=.nojekyll --delete  $WORKINGDIR/docs-source/_package/main/ $WORKINGDIR/redhatgov.github.io
+rsync -avz --exclude=.git --exclude=CNAME --exclude=.nojekyll --delete  $WORKINGDIR/docs-source/fonts $WORKINGDIR/redhatgov.github.io/latest
+rsync -avz --exclude=.git --exclude=CNAME --exclude=.nojekyll --delete  $WORKINGDIR/docs-source/fonts $WORKINGDIR/redhatgov.github.io/
+cd $WORKINGDIR/redhatgov.github.io
+git add -A
+git commit -a -m "auto deploy by $USER"
+cd $WORKINGDIR/docs-source
+git add -A
+git commit -m "auto deploy by $USER"

@@ -1,0 +1,19 @@
+= Red Hat Gov 
+
+The scripts in this repo are not yet complete, and should not be considered ready for use. Everything is staged, and when everything works as it should this repo will be made public. 
+
+Contact donny@redhat.com if you have questions
+
+
+== How to contribute
+
+
+If you are on linux, and have docker setup you can copy and paste the following
+----
+curl -O https://raw.githubusercontent.com/RedHatGov/docs-source/master/setupdocker.sh 
+chmod +x setupdocker.sh 
+./setupdocker.sh
+----
+
+If you have a Mac and are interested in helping, an automation script still needs to be written to setup this project.
+

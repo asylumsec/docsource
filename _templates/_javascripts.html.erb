@@ -1,0 +1,3 @@
+<%- Dir.glob("_javascripts/*").sort.each do |script| -%>
+  <script src="<%= File.join(javascripts_path, File.basename(script)) %>" type="text/javascript"></script>
+<%- end -%>

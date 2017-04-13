@@ -1,0 +1,47 @@
+@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css);
+/* Footer Edits 12/30/2015 */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* This is only set for pages that wont push the footer to the bottom */
+  margin-bottom: 200px;
+}
+
+/* ------------------------------------------------------------
+Image: "Spin" https://www.flickr.com/photos/eflon/3655695161/
+Author: eflon https://www.flickr.com/photos/eflon/
+License: https://creativecommons.org/licenses/by/2.0/
+---------------------------------------------------------------*/
+.footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 130px
+  color: #fafafa;
+  background-color: #030303;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+#footer_social {
+  text-align: center;
+  margin: 10px 0 20px;
+}
+#footer_social a {
+  margin: 0 10px;
+}
+
+#footer_logo {
+  margin-left: 0;
+}
+#built_with_asciibinder img {
+  width: 140px;
+}
+/* End footer edits */

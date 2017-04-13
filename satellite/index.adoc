@@ -1,0 +1,24 @@
+[[satellite]]
+= Red Hat Satellite
+{product-author}
+{product-version}
+:data-uri:
+:icons:
+:experimental:
+:toc: macro
+:toc-title:
+:prewrap!:
+
+toc::[]
+
+== Overview
+Red Hat Satellite 6 is the evolution of Red Hat's life cycle management platform.
+
+It provides the capabilities that administrators have come to expect in a tool focused on managing systems and content for a global enterprise.
+
+Satellite 6 covers the use cases requested by Satellite 5 customers, but also includes functionality that enables larger scale, federation of content,
+better control of systems during the provisioning process, and a much more simplified approach to life cycle management.
+
+Satellite 6 also further evolves the inherent approach to certificate-based entitlements and integrated subscription management.
+
+Satellite 6 is based on years of customer feedback and is an evolution of previous versions.

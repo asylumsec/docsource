@@ -1,0 +1,18 @@
+#!/bin/bash
+unset WORKINGDIR
+export WORKINGDIR=/home/donny/projects/asylum
+cd $WORKINGDIR/docsource
+git add -A
+git commit -m "auto deploy by $USER"
+asciibinder package
+rsync -avz --exclude=.git --exclude=CNAME --exclude=.nojekyll --delete  $WORKINGDIR/docsource/_package/main/ $WORKINGDIR/asylumsec.github.io
+rsync -avz --exclude=.git --exclude=CNAME --exclude=.nojekyll --delete  $WORKINGDIR/docsource/fonts $WORKINGDIR/asylumsec.github.io/latest
+rsync -avz --exclude=.git --exclude=CNAME --exclude=.nojekyll --delete  $WORKINGDIR/docsource/fonts $WORKINGDIR/asylumsec.github.io/
+cd $WORKINGDIR/redhatgov.github.io
+git add -A
+git commit -a -m "auto deploy by $USER"
+git push
+cd $WORKINGDIR/docsource
+git add -A
+git commit -m "auto deploy by $USER"
+git push
