@@ -15,15 +15,7 @@ toc::[]
 This section is to answer frequently asked questions about working with asciibinder.
 
 === Why Asciibinder
-Asciibinder is a Red Hat project to document all the things that are closely related, but need different streams. Asciibinder was selected becasue its very easy to work with, and many of the things
-we do as Solution Architects may be related, but applicable in different enviroments. Instead of having a bunch of statements that say "if you are in env A then do B", we can manage all of the
-docs just like you would any other project/product.
-
-=== Is this offical Red Hat documentation
-No. This is not documentation on a particluar product. You may find documentation on how to work with different products, however https://access.redhat.com/documentation is the source of truth for any Red Hat product.
-
-=== Why not just publish this documentation on siteX
-The documentation found here is directly related to the code sourced in RedHatGov, RedHatDoD, RedHatIC, and RedHatFed. Any of the workshops, source code, playbooks etc should be documented here for ease of use.
+Because we like it
 
 === Why aren't any of the FAQ answers on here related to my actual question
 This site is still very much in its infancy. This FAQ page is meant to serve as an example page as well as a FAQ. If you look at the welcome/faq.adoc file, you will see how to use some of the features of asciibinder.

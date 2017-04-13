@@ -18,5 +18,5 @@ There will be improvements to come in the tooling to make working with this repo
 
 [WARNING]
 ====
-This documentation is aimed at demo enviroments used by Red Hat engineers
+This documentation is aimed at Cyber Security Engineers
 ====
